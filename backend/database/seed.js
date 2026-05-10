@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 const bcrypt = require('bcryptjs');
-const { pool, testConnection } = require('./config/database');
+const { pool, testConnection } = require('../config/database');
 
 const seed = async () => {
   console.log('🌱 Starting database seeding...');
