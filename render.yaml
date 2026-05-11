@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: budgetstack-backend
+    name: fintrack-backend
     runtime: node
     plan: free
     rootDir: backend
@@ -17,4 +17,4 @@ services:
       - key: JWT_EXPIRES_IN
         value: 7d
       - key: CLIENT_URL
-        value: https://budgetstack.vercel.app # Update this after Vercel deployment
+        sync: false # Set this to your Vercel URL in the Render dashboard
