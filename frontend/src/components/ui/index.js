@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 // Animated number counter
 export const AnimatedNumber = ({ value, prefix = '', suffix = '', decimals = 0 }) => {
   const formatted = new Intl.NumberFormat('en-IN', {

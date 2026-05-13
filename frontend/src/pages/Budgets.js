@@ -26,7 +26,7 @@ export default function Budgets() {
     }
   };
 
-  useEffect(() => { fetchBudgets(); }, []);
+  useEffect(() => { fetchBudgets(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSave = async (e) => {
     e.preventDefault();

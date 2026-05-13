@@ -10,10 +10,7 @@ export default function Settings() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
   const [form, setForm] = useState({ name: user?.name || '', currency: user?.currency || 'INR' });
-  const [passwords, setPasswords] = useState({ current: '', next: '', confirm: '' });
   const [saving, setSaving] = useState(false);
-  const [showCurrent, setShowCurrent] = useState(false);
-  const [showNext, setShowNext] = useState(false);
 
   const handleProfile = async (e) => {
     e.preventDefault();
