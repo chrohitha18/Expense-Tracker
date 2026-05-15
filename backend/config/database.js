@@ -3,7 +3,9 @@ const { open } = require('sqlite');
 const path = require('path');
 const fs = require('fs');
 
-const dbPath = process.env.DB_PATH || path.resolve(__dirname, '../database/database.sqlite');
+const dbPath = process.env.DB_PATH 
+  ? path.resolve(process.cwd(), process.env.DB_PATH)
+  : path.resolve(__dirname, '../database/database.sqlite');
 let dbInstance = null;
 
 const initDb = async () => {

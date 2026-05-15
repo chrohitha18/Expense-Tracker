@@ -10,11 +10,11 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 5000
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRES_IN
         value: 7d
       - key: CLIENT_URL
-        sync: false # Set this to your Vercel URL in the Render dashboard
+        sync: false # Update this to your frontend URL after deployment
+      - key: DB_PATH
+        value: database.sqlite
